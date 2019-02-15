@@ -11,9 +11,10 @@ _This is a program that counts how many times a word used in a sentance._
 | Behavior - Plain English | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **The easiest behavior a program can possibly have - check if the user entered anything at all:** |
-| **Program evaluates if there is no input** | User input: "" | "I am sorry, you didn't enter a word!" |
+| **Program evaluates if there is no input** | User input: "" | "I am sorry, you've missed a line!" |
 | **Next behavior a program can possibly have - compare one word to another, because it is easy to find one wordout of one:** |
 | **Program matches word to word from a sentence** | User input: "a", "a" | 1 |
+| **Program matches numerical input from a sentence** | User input: "1", "1" | 1 |
 | **The program can compare to words regardless of the case:** |
 | **Program matches word to word from a sentence regardless of capitalization** | User input: "A", "a" | 1 |
 | **The program counts all words that match, that is the the last step:** |
@@ -30,6 +31,7 @@ _No known bugs._
 * _On the right find the green button "Clone or download", click it._
 * _To clone the repository in Desktop choose "Open in Desktop" or download the ZIP file._
 * _For more information, see "Cloning a repository from GitHub to GitHub Desktop."_
+* _Use Terminal to test the program._
 
 ## Technologies Used
 

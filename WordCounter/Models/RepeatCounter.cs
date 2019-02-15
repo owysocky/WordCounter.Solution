@@ -24,7 +24,10 @@ namespace WordCounter
     {
       string toLowerWord = word.ToLower();
       string toLowerCentence = sentence.ToLower();
-      string[] wordsFromSentance = toLowerCentence.Split(' ');
+      string pattern = @"[^A-Za-z0-9 ]";
+      string cleanSentence = System.Text.RegularExpressions.Regex.Replace(toLowerCentence, pattern, string.Empty);
+
+      string[] wordsFromSentance = cleanSentence.Split(' ');
       int counter = 0;
 
       foreach (string element in wordsFromSentance) {
