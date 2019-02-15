@@ -13,9 +13,9 @@ _This is a program that counts how many times a word used in a sentance._
 | **The easiest behavior a program can possibly have - check if the user entered anything at all:** |
 | **Program evaluates if there is no input** | User input: "" | "I am sorry, you didn't enter a word!" |
 | **Next behavior a program can possibly have - compare one word to another, because it is easy to find one wordout of one:** |
-| **Program matches word to word from a sentence** | User input: "yes", "yes" | true |
+| **Program matches word to word from a sentence** | User input: "yes", "yes" | 1 |
 | **The program can compare to words regardless of the case:** |
-| **Program matches word to word from a sentence regardless of capitalization** | User input: "YeS", "yes" | true |
+| **Program matches word to word from a sentence regardless of capitalization** | User input: "YeS", "yes" | 1 |
 | **The program counts all words that match, that is the last and hardest step:** |
 | **Program shows the count of words** | User input: "a", "A dog, a cat" | 2 |
 
