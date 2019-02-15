@@ -55,7 +55,5 @@ namespace WordCounter.Tests
       RepeatCounter testCount = new RepeatCounter();
       Assert.AreEqual(2, testCount.WordCount("  cat ", "A cat, a CAT!"));
     }
-
-
   }
 }
