@@ -22,7 +22,7 @@ namespace WordCounter
 
     public int WordCount(string word, string sentence)
     {
-      string toLowerWord = word.ToLower();
+      string toLowerWord = word.ToLower().Trim();
       string toLowerCentence = sentence.ToLower();
       string pattern = @"[^A-Za-z0-9 ]";
       string cleanSentence = System.Text.RegularExpressions.Regex.Replace(toLowerCentence, pattern, string.Empty);

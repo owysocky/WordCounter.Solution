@@ -19,8 +19,10 @@ _This is a program that counts how many times a word used in a sentance._
 | **Program matches word to word from a sentence regardless of capitalization** | User input: "A", "a" | 1 |
 | **The program counts all words that match, that is the the last step:** |
 | **Program shows the count of words** | User input: "a", "A dog, a cat" | 2 |
-| **The program counts all words that match without counting punctuatoin, that is the last and the most code requireble step step:** |
+| **The program counts all words that match without counting punctuatoin, that is almost the most code requireble step step:** |
 | **Program shows the count of words** | User input: "cat", "A cat, a CAT!" | 2 |
+| **The program counts all words even if there are white spaces, that is the very last and the most code requireble step step:** |
+| **Program shows the count of words** | User input: "  cat  ", "A cat, a CAT!" | 2 |
 
 ## Known Bugs
 
