@@ -18,7 +18,7 @@ namespace WordCounter
      bool isEmpty = countIt.IsEmpty(wordInput, sentenceInput);
      if (isEmpty == true)
      {
-       Console.WriteLine("The word " + wordInput + " is used " + countIt.WordCount(wordInput, sentenceInput) + " times.");
+       Console.WriteLine("The word '{0}' is used {1} times.", wordInput, countIt.WordCount(wordInput, sentenceInput));
      }
      else
      {

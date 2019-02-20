@@ -28,12 +28,19 @@ _This is a program that counts how many times a word used in a sentance._
 
 _No known bugs._
 
+## Installation Requirements
+* _Download and install .NET Core 1.1.4 SDK._
+* _Download and install .NET Core Runtime 1.1.2_
+* _Download and install Mono_
+
 ## Setup instructions
 * _On GitHub, navigate to the main page of the repository._
 * _On the right find the green button "Clone or download", click it._
 * _To clone the repository in Desktop choose "Open in Desktop" or download the ZIP file._
 * _For more information, see "Cloning a repository from GitHub to GitHub Desktop."_
-* _Use Terminal to test the program._
+* _Change into the work directory:: $ cd WordCounter.Solution_
+* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;_
+* _To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test_
 
 ## Technologies Used
 
