@@ -1,6 +1,6 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter;
+using WordCounter.Models;
 
 namespace WordCounter.Tests
 {
@@ -10,50 +10,64 @@ namespace WordCounter.Tests
     [TestMethod]
     public void IsEmpty_CheckIfNotEmpty_True()
     {
-      RepeatCounter testWord = new RepeatCounter();
-      Assert.AreEqual(true, testWord.IsEmpty("a", "a"));
+      string myWord = "a";
+      string mySentence = "a";
+      RepeatCounter myCounter = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(true, myCounter.IsEmpty());
     }
 
     [TestMethod]
     public void WordCount_WordCountsWord_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(1, testCount.WordCount("a", "a"));
+      string myWord = "a";
+      string mySentence = "a";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(1, testCount.WordCounter());
     }
 
     [TestMethod]
     public void WordCount_WordCountsNumbers_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(1, testCount.WordCount("1", "1"));
+      string myWord = "1";
+      string mySentence = "1";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(1, testCount.WordCounter());
     }
 
     [TestMethod]
     public void WordCount_CaseInsensitiveCount_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(1, testCount.WordCount("A", "a"));
+      string myWord = "a";
+      string mySentence = "A";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(1, testCount.WordCounter());
     }
 
     [TestMethod]
     public void WordCount_WordCountsSentence_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(2, testCount.WordCount("A", "A cat a dog"));
+      string myWord = "A";
+      string mySentence = "A cat a dog";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(2, testCount.WordCounter());
     }
 
     [TestMethod]
     public void WordCount_WordCountsSentenceRegardlessPunctuation_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(2, testCount.WordCount("cat", "A cat, a CAT!"));
+      string myWord = "cat";
+      string mySentence = "A cat, a CAT!";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(2, testCount.WordCounter());
     }
 
     [TestMethod]
     public void WordCount_WordCountsWithoutWhiteSpaces_True()
     {
-      RepeatCounter testCount = new RepeatCounter();
-      Assert.AreEqual(2, testCount.WordCount("  cat ", "A cat, a CAT!"));
+      string myWord = "  cat ";
+      string mySentence = "A cat, a CAT!";
+      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
+      Assert.AreEqual(2, testCount.WordCounter());
     }
   }
 }

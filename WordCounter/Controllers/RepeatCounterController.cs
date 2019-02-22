@@ -23,7 +23,16 @@ namespace WordCounter.Controllers
     public ActionResult Create(string word, string sentence)
     {
       RepeatCounter myCounter = new RepeatCounter(word, sentence);
-      return View("Index", myCounter);
+      bool isValid = myCounter.IsEmpty();
+      if(isValid)
+      {
+        return View("Index", myCounter);
+      }
+      else
+      {
+        return View();
+      }
+
     }
 
   }
