@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+using System;
 using WordCounter.Controllers;
 using WordCounter.Models;
 
@@ -26,7 +26,7 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
-    public void Create_ReturnsCorrectActionType_RedirectToActionResult()
+    public void Create_ReturnsCorrectActionType_RedirectToViewResult()
     {
       RepeatCounterController controller = new RepeatCounterController();
       IActionResult view = controller.Create("a", "a");
