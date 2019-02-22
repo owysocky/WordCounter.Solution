@@ -7,16 +7,8 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class ControllerTest
+  public class RepeatCounterControllerTest
   {
-    [TestMethod]
-    public void IndexHome_ReturnsCorrectView_True()
-    {
-    HomeController controller = new HomeController();
-    ActionResult indexView = controller.Index();
-    Assert.IsInstanceOfType(indexView, typeof(ViewResult));
-    }
-
     [TestMethod]
     public void IndexRepeatCounter_ReturnsCorrectView_True()
     {

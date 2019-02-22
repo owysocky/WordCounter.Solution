@@ -17,8 +17,21 @@ namespace WordCounter.Models
     public Scrabble(string word){
       _word = word;
     }
-    
+
     public string GetWord(){return _word;}
+
+    public bool isLetter()
+    {
+      double testNum = 0;
+      if(Double.TryParse(_word, out testNum))
+      {
+        return false;
+      }
+      else
+      {
+        return true;
+      }
+    }
 
     public int ScoreCount()
     {
