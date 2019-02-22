@@ -39,8 +39,9 @@ _No known bugs._
 * _To clone the repository in Desktop choose "Open in Desktop" or download the ZIP file._
 * _For more information, see "Cloning a repository from GitHub to GitHub Desktop."_
 * _Change into the work directory:: $ cd WordCounter.Solution._
-* _To run the program, first navigate to the location of the WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe._
-* _To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test._
+* _To run the program, first navigate to the WordCounter folder then compile and execute: $ dotnet restore, $ dotnet build, dotnet run._
+* _In the browser go to the link http://localhost:5000/, enjoy._
+* _To run the tests, novigate the folder WordCounter.Tests and use these commands: $ dotnet restore $ dotnet test._
 
 ## Technologies Used
 
