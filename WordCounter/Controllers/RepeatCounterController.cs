@@ -10,8 +10,7 @@ namespace WordCounter.Controllers
     [HttpGet("/repeatcouner")]
     public ActionResult Index()
     {
-      List<RepeatCounter> allItems = Item.GetAll();
-      return View(allItems);
+      return View();
     }
 
     [HttpGet("/repeatcouner/new")]
@@ -24,7 +23,7 @@ namespace WordCounter.Controllers
     public ActionResult Create(string word, string sentence)
     {
       RepeatCounter myCounter = new RepeatCounter(word, sentence);
-      return RedirectToAction("Index");
+      return View("Index", myCounter);
     }
 
   }

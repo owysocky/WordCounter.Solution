@@ -4,13 +4,25 @@ namespace WordCounter.Models
 {
   public class RepeatCounter
   {
-    public bool IsEmpty(string word, string sentence)
+    private string _word;
+    private string _sentence;
+
+    public RepeatCounter(string word, string sentence)
     {
-      if (String.IsNullOrEmpty(word))
+      _word = word;
+      _sentence = sentence;
+    }
+
+    public string GetWord(){return _word;}
+    public string GetSentence(){return _sentence;}
+
+    public bool IsEmpty()
+    {
+      if (String.IsNullOrEmpty(_word))
       {
        return false;
       }
-      else if (String.IsNullOrEmpty(sentence))
+      else if (String.IsNullOrEmpty(_sentence))
       {
        return false;
       }
@@ -20,10 +32,10 @@ namespace WordCounter.Models
       }
     }
 
-    public int WordCount(string word, string sentence)
+    public int WordCounter()
     {
-      string toLowerWord = word.ToLower().Trim();
-      string toLowerCentence = sentence.ToLower();
+      string toLowerWord = _word.ToLower().Trim();
+      string toLowerCentence = _sentence.ToLower();
       string pattern = @"[^A-Za-z0-9 ]";
       string cleanSentence = System.Text.RegularExpressions.Regex.Replace(toLowerCentence, pattern, string.Empty);
 
