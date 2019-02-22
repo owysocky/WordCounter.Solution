@@ -25,6 +25,5 @@ namespace WordCounter.Controllers
       Scrabble myCounter = new Scrabble(word);
       return View("Index", myCounter);
     }
-
   }
 }
