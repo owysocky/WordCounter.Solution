@@ -25,6 +25,7 @@ namespace WordCounter
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UseDeveloperExceptionPage();
       app.UseMvc(routes =>
       {
         routes.MapRoute(
@@ -34,7 +35,7 @@ namespace WordCounter
 
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Something went wrong!");
+        await context.Response.WriteAsync("Ooops! Something went wrong!");
       });
 
     }
