@@ -1,0 +1,16 @@
+@using WordCounter.Models;
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+<div class="jumbotron">
+<h1> Your Scrabble Score</h1>
+</div>
+<h3>Word: '@Model.GetWord()' </h3>
+<h2>Your have @Model.ScoreCount() points.</h2>
+
+<a href="/scrabble/new">Count again</a>
+<br>
+<a href="/">Main page</a>
+</div>

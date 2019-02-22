@@ -61,13 +61,5 @@ namespace WordCounter.Tests
       Assert.AreEqual(2, testCount.WordCounter());
     }
 
-    [TestMethod]
-    public void WordCount_WordCountsWithoutWhiteSpaces_True()
-    {
-      string myWord = "  cat ";
-      string mySentence = "A cat, a CAT!";
-      RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
-      Assert.AreEqual(2, testCount.WordCounter());
-    }
   }
 }

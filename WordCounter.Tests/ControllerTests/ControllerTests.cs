@@ -26,6 +26,14 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
+    public void NewRepeatCounter_ReturnsCorrectView_True()
+    {
+    RepeatCounterController controller = new RepeatCounterController();
+    ActionResult indexView = controller.Index();
+    Assert.IsInstanceOfType(indexView, typeof(ViewResult));
+    }
+
+    [TestMethod]
     public void Create_ReturnsCorrectActionType_RedirectToViewResult()
     {
       RepeatCounterController controller = new RepeatCounterController();
