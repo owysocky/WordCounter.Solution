@@ -41,6 +41,5 @@ namespace WordCounter.Tests
       string result = actionResult.ViewName;
       Assert.AreEqual(result, "Index");
     }
-
   }
 }

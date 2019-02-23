@@ -16,6 +16,5 @@ namespace WordCounter.Tests
     ActionResult indexView = controller.Index();
     Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
-
   }
 }

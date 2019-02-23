@@ -60,6 +60,5 @@ namespace WordCounter.Tests
       RepeatCounter testCount = new RepeatCounter(myWord, mySentence);
       Assert.AreEqual(2, testCount.WordCounter());
     }
-
   }
 }

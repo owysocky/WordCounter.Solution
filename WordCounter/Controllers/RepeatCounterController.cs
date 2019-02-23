@@ -6,7 +6,6 @@ namespace WordCounter.Controllers
 {
   public class RepeatCounterController : Controller
   {
-
     [HttpGet("/repeatcouner")]
     public ActionResult Index()
     {
@@ -33,6 +32,5 @@ namespace WordCounter.Controllers
         return View();
       }
     }
-
   }
 }

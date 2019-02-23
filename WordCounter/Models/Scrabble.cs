@@ -61,7 +61,6 @@ namespace WordCounter.Models
           return score;
         }
       }
-
       return score;
     }
   }

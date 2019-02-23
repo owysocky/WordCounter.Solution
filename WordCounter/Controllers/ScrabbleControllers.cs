@@ -6,7 +6,6 @@ namespace WordCounter.Controllers
 {
   public class ScrabbleController : Controller
   {
-
     [HttpGet("/scrabble")]
     public ActionResult Index()
     {
